@@ -32,7 +32,7 @@ test('get started link', async ({ page }) => {
  */
 
 test.describe('@UI Navigate and test Node and Java pages titles', () => {
-  test('Verify Java and Node page titles', async ({ page, context }) => {
+  test('Verify Java and Node page titles', async ({ page }) => {
 
       await test.step('Verify Java page title', async () => {
       
