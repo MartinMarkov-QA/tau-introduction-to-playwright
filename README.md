@@ -37,4 +37,4 @@ ___
 
 💜 If you have questions, feel free to post them on [github](https://github.com/raptatinha/tau-introduction-to-playwright/issues).
 
-Happy Testing 🎭
+Happy Testing! 🎭 
