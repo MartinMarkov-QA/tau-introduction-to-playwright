@@ -20,8 +20,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
 
   /* Retry on CI only */
-  // retries: process.env.CI ? 2 : 0,
-  retries: 2,
+  retries: process.env.CI ? 2 : 1,
 
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
@@ -47,8 +46,8 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    /* Collect trace for every test run. See https://playwright.dev/docs/trace-viewer */
+    trace: 'on-all-retries',
     screenshot: 'only-on-failure',
     // headless: false,
     // ignoreHTTPSErrors: true,
